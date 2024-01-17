@@ -68,7 +68,7 @@ This command will enforces provider used by Meshery
 
 <h3>What is the ‘reset’ command for ?</h3>
 <p>The ‘reset’ command can be used to reset the provider value of context in focus in the meshconfig to the default after having used the ‘set’ or ‘switch’ commands.  The change will be reflected only when Meshery is redeployed. Currently the default provider field is empty i.e. no provider is enforced by default.
-</p><code class="code-block">mesheryctl system provider reset</code>. If you don't have mesheryctl installed, you can install it by following the instructions in the  <a href="https://docs.meshery.io/installation/mesheryctl">Meshery documentation</a>.
+</p><code class="code-block">mesheryctl system provider --token ${{ secrets.GITHUB_TOKEN }} reset</code>. If you don't have mesheryctl installed, you can install it by following the instructions in the  <a href="https://docs.meshery.io/installation/mesheryctl">Meshery documentation</a>.
 
 <h3>Why does the  ‘set’ command have a ‘–-force’ flag ?</h3>
 <p>The set command uses the '/api/providers’ endpoint of the Meshery server to verify whether a valid provider is being set.  If the endpoint is inaccessible due to the Meshery server not running or the provider passed to the command is invalid, then the provider is not set in the meshconfig.  To override this behavior the ‘--force’ flag can be used.</p>
