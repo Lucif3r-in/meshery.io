@@ -46,6 +46,7 @@ jobs:
     name: SMI Conformance
     runs-on: ubuntu-latest
     steps:
+    steps:
 
       - name: SMI conformance tests
         uses: layer5io/mesheryctl-smi-conformance-action@master
