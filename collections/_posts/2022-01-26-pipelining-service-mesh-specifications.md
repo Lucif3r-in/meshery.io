@@ -49,7 +49,7 @@ jobs:
     steps:
 
       - name: SMI conformance tests
-        uses: layer5io/mesheryctl-smi-conformance-action@master
+        uses: layer5io/meshery/mesheryctl-smi-conformance-action@v1
         with:
           provider_token: $
           service_mesh: open_service_mesh
@@ -69,7 +69,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:&#xa;
        - name: SMI conformance tests
-         uses: layer5io/mesheryctl-smi-conformance-action@master
+         uses: layer5io/meshery/mesheryctl-smi-conformance-action@v1
          with:
            provider_token: $
            service_mesh: open_service_mesh
@@ -114,7 +114,7 @@ jobs:
            osm-bin install --osm-namespace default
 
       - name: SMI conformance tests
-        uses: layer5io/mesheryctl-smi-conformance-action@master
+        uses: layer5io/meshery/mesheryctl-smi-conformance-action@v1
         with:
           provider_token: $
           service_mesh: open_service_mesh
