@@ -48,11 +48,11 @@ jobs:
     steps:
 
       - name: SMI conformance tests
-        uses: layer5io/mesheryctl-smi-conformance-action@master
+        uses: layer5io/meshery-smi-conformance-action@v1.2
         with:
           provider_token: $
-          service_mesh: open_service_mesh
-          mesh_deployed: false 
+          service_mesh: istio
+          mesh_deployed: true 
 </code>
     <!-- copy to clipboard -->
     <a class="btn tooltip" style="position: absolute; top:0.10rem; right: 0.5rem; font-size: 22px;" data-clipboard-target="#channelset"
@@ -68,11 +68,11 @@ jobs:
      runs-on: ubuntu-latest
      steps:&#xa;
        - name: SMI conformance tests
-         uses: layer5io/mesheryctl-smi-conformance-action@master
+         uses: layer5io/meshery-smi-conformance-action@v1.2
          with:
            provider_token: $
-           service_mesh: open_service_mesh
-           mesh_deployed: false"
+           service_mesh: istio
+           mesh_deployed: true"
           onmouseout="resetCopyText(this)">
       <i class="far fa-copy"></i>
       <span class="tooltiptext" style="font-size: 15px; width: 140px; height: 40px; padding: 0; line-height: 40px; top: 2rem; left: -80px;">Copy to clipboard</span>
