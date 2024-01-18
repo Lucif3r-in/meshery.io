@@ -35,7 +35,7 @@ To subscribe to a specific release channel or version using mesheryctl you can u
   </code>
     <!-- copy to clipboard -->
     <a class="btn tooltip" style="position: absolute; top:0.10rem; right: 0.5rem; font-size: 22px;" data-clipboard-target="#channelset"
-      data-clipboard-text="mesheryctl system channel set [stable|stable-version|edge|edge-version]" onmouseout="resetCopyText(this)">
+      data-clipboard-text="mesheryctl system channel set [edge|stable]" onmouseout="resetCopyText(this)">
       <i class="far fa-copy"></i>
       <span class="tooltiptext" style="font-size: 15px; width: 140px; height: 40px; padding: 0; line-height: 40px; top: 2rem; left: -80px;">Copy to clipboard</span>
     </a>
